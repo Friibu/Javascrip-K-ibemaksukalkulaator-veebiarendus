@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Käibemaksukalkulaator</title>
+    <script>
+       function arvutus(){
+      let hind = document.getElementById("hind").value;
+      let kmaksp = document.getElementById("maks").value / 100;
+      let kmakssuurus = hind * kmaksp;
+      let tootehind = parseInt(hind) + parseInt(kmakssuurus);
+      document.getElementById("kmakssuurus").innerHTML = kmakssuurus;
+      document.getElementById("tootehind").innerHTML = tootehind
+       }
+     </script>
+</head>
+     <body>
+    
+
+
+    <label for="Hind">Hind</label>
+    <input type="number"  id="hind">
+
+<label for="maks">käibemaksuprotsent</label>
+<select  id="maks">
+  <option value="20">20</option>
+  <option value="22">22</option>
+  <option value="24" selected>24</option>
+  <option value="26">26</option>
+  <option value="67676767676767676767676767676767">67676767676767676767676767676767</option>
+</select>
+
+<input type="button" value="Miinusta" onclick="arvutus()">
+
+<p id="kmakssuurus"></p>
+<p id="tootehind"></p>
+
+</body>
+</html>
