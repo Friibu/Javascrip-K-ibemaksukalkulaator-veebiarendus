@@ -1,0 +1,21 @@
+input{
+    color: antiquewhite;
+    -webkit-text-fill-color: black;
+       outline: auto;
+    outline-color: black;
+}
+
+html{
+    text-align: center;
+    border-color: blueviolet;
+    text-transform: capitalize;
+    text-decoration: double;
+    outline: auto;
+    outline-color: black;
+    outline-width: 5000px;
+}
+
+
+
+
+    
